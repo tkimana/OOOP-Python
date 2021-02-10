@@ -6,6 +6,9 @@ class Customer:
     def update_membership(self, new_membership_type):
         self.new_membership_type=new_membership_type
 
+    def __str__(self):
+        print('Print String')
+
 c= [Customer('James', 'bronze'), Customer('Greg', 'gold')]
 c[0].update_membership('Silva')
 print(c[0].new_membership_type)
