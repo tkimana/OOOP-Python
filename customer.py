@@ -1,4 +1,12 @@
-class Customer:
+class User:
+    def log(self):
+        print(self)
+
+
+class Customer(User):
+
+    def log(self):
+        print("I'm a customer")
 
     def __init__(self,name,membership_type):
         self.name=name
@@ -42,9 +50,7 @@ class Customer:
 
 
 c= [Customer('James', 'bronze'), Customer('Greg', 'gold')]
-
 Customer.print_all_customers(c)
-
 print(c[0].name)
 
 
